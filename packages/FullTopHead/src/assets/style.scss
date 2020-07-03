@@ -1,0 +1,86 @@
+.pipi-h5-full-top-head {
+  background-color: transparent;
+  width: 100%;
+
+  // @at-root &_fixed {
+  //   position: fixed;
+  //   z-index: 20;
+  //   top: 0;
+  //   left: 0;
+  //   &.right-tools {
+  //     left: auto;
+  //     right: 0;
+  //   }
+  // }
+
+  &_bd {
+    height: 88px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &_placeholder {
+    height: 10Px;
+    /*ignore*/
+
+    @at-root .full-head-android & {
+      height: 30Px;
+      /*ignore*/
+    }
+
+    @at-root .full-head-iphoneX & {
+      height: 44Px;
+      /*ignore*/
+    }
+
+    @at-root .full-head-iphone & {
+      height: 20Px;
+      /*ignore*/
+    }
+  }
+
+  &_left {
+    flex-shrink: 0;
+    height: 100%;
+  }
+
+  &_right {
+    position: relative;
+    z-index: 4;
+    margin-left: auto;
+    flex-shrink: 0;
+    height: 100%;
+  }
+
+  &_back {
+    position: relative;
+    z-index: 4;
+    width: 58px;
+    height: 100%;
+
+    background: {
+      size: 36px 36px;
+      image: url('images/back-white.png');
+      repeat: no-repeat;
+      position: right center;
+    }
+
+    ;
+  }
+
+  &_center {
+    position: absolute;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    color: #fff;
+    justify-content: center;
+    font-size: 34px;
+  }
+}

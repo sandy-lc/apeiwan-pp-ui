@@ -1,24 +1,13 @@
-# vui
+# pp-ui
 
-## Project setup
-```
-npm install
-```
+### q1: 为什么不分组件打包
 
-### Compiles and hot-reloads for development
 ```
-npm run serve
+a:因为我们这个是业务组件，全部打包即可
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+### q2:文件目录格式
 
-### Lints and fixes files
 ```
-npm run lint
+a:参照大厂的格式，我也不知道为什么
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
