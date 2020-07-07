@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <PPFullTopHead scroll-bg-rgb-color="14,85,99" fixed title="宝石迷踪">111</PPFullTopHead>
+    <pp-full-top-head scroll-bg-color="14,85,99" fixed title="宝石迷踪" :show-share="true"></pp-full-top-head>
   </div>
 </template>
 
@@ -13,14 +13,17 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   background-color: rgb(0,0,0)
 }
+html{
+  height: 100%;
+}
 body{
-  margin: 0
+  margin: 0;
+  height: 200%;
+  background: pink
 }
 </style>
