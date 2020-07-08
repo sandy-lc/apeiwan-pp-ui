@@ -1,0 +1,101 @@
+.call-sound {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  transform: translate(-50%, 0);
+  overflow: hidden;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50px;
+    transform: translate(0, -50%);
+    width: 25px;
+    height: 25px;
+
+    background: {
+      size: 100% 100%;
+      repeat: no-repeat;
+      position: center center;
+      image: url('./images/call.png');
+    }
+  }
+
+  &_bd {
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-left: 85px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: #fff;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  @-webkit-keyframes slideInUp {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes slideInUp {
+    from {
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+      visibility: visible;
+    }
+
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @-webkit-keyframes slideOutUp {
+    from {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    to {
+      visibility: hidden;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+
+  @keyframes slideOutUp {
+    from {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    to {
+      visibility: hidden;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  }
+
+  @at-root .call-sound-animated-enter-active {
+    animation: slideInUp 300ms linear;
+  }
+
+  @at-root .call-sound-animated-leave-active {
+    animation: slideOutUp 300ms linear;
+  }
+}

@@ -22,9 +22,11 @@
     "postcss-url": "^8.0.0",
     "postcss-viewport-units": "^0.1.6",
     "postcss-write-svg": "^3.0.1",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "@apeiwan/ppjsbridge": "^0.1.0"
   },
   "devDependencies": {
+    "@apeiwan/ppjsbridge": "^0.1.0",
     "@vue/cli-plugin-babel": "~4.4.0",
     "@vue/cli-plugin-eslint": "~4.4.0",
     "@vue/cli-service": "~4.4.0",
@@ -32,9 +34,9 @@
     "cssnano-preset-advanced": "^4.0.7",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^4.13.0",
     "sass-loader": "^9.0.0",
-    "vue-template-compiler": "^2.6.11",
-    "node-sass": "^4.13.0"
+    "vue-template-compiler": "^2.6.11"
   },
   "eslintConfig": {
     "root": true,
