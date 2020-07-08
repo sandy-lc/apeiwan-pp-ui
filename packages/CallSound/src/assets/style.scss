@@ -2,31 +2,26 @@
   position: absolute;
   z-index: 10;
   left: 50%;
-  top: 95px;
   transform: translate(-50%, 0);
-  width: 564px;
-  height: 40px;
-  background: rgba(39, 82, 81, 1);
-  border-radius: 20px;
   overflow: hidden;
 
-  // &:after {
-  //   content: '';
-  //   position: absolute;
-  //   z-index: 2;
-  //   top: 50%;
-  //   left: 50px;
-  //   transform: translate(0, -50%);
-  //   width: 25px;
-  //   height: 25px;
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50px;
+    transform: translate(0, -50%);
+    width: 25px;
+    height: 25px;
 
-  //   background: {
-  //     size: 100% 100%;
-  //     repeat: no-repeat;
-  //     position: center center;
-  //     image: url('./images/call.png');
-  //   }
-  // }
+    background: {
+      size: 100% 100%;
+      repeat: no-repeat;
+      position: center center;
+      image: url('./images/call.png');
+    }
+  }
 
   &_bd {
     position: absolute;
@@ -34,7 +29,6 @@
     height: 100%;
     width: 100%;
     text-align: center;
-    line-height: 40px;
     padding-left: 85px;
     padding-right: 20px;
     display: flex;
@@ -42,21 +36,7 @@
     font-size: 22px;
     color: #fff;
     overflow: hidden;
-
-    span {
-      flex-shrink: 0;
-    }
-
-    .hint {
-      padding: 0 6px;
-      color: #ffaddf;
-    }
-
-    .nickname {
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-    }
+    box-sizing: border-box;
   }
 
   @-webkit-keyframes slideInUp {
