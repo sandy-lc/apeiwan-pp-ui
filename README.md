@@ -18,3 +18,7 @@ a:参照大厂的格式，我也不知道为什么
 
   - desc: 在 app 下全屏，在非 app 可以呈现下载
   - remark: 依赖 ppbridge,所以需要安装这个@apeiwan/ppjsbridge
+
+- ## ppCallSound
+
+  - desc: 喇叭循环滚动播放列表

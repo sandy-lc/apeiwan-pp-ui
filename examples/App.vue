@@ -2,11 +2,9 @@
   <div id="app">
     <pp-full-top-head
       scroll-bg-color="14,85,99"
-      fixed
       title="宝石迷踪"
-      :show-share="true"
     ></pp-full-top-head>
-    <PPCallSound
+    <pp-call-sound
       class="call-sound-test"
       :list="list"
     >
@@ -16,7 +14,7 @@
         <span>抽中了</span>
         <span class="hint">{{slotProps.item.lotteryName}}</span>
       </template>
-    </PPCallSound>
+    </pp-call-sound>
   </div>
 </template>
 

@@ -7,17 +7,14 @@
   .pipi-h5-full-top-head {
     background-color: transparent;
     width: 100%;
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
 
-    @at-root &_fixed {
-      position: fixed;
-      z-index: 20;
-      top: 0;
-      left: 0;
-
-      &.right-tools {
-        left: auto;
-        right: 0;
-      }
+    &.right-tools {
+      left: auto;
+      right: 0;
     }
 
     &_bd {
@@ -28,21 +25,21 @@
     }
 
     &_placeholder {
-      height: 10Px;
+      height: 10px;
       /*ignore*/
 
       @at-root .full-head-android & {
-        height: 30Px;
+        height: 30px;
         /*ignore*/
       }
 
       @at-root .full-head-iphoneX & {
-        height: 44Px;
+        height: 44px;
         /*ignore*/
       }
 
       @at-root .full-head-iphone & {
-        height: 20Px;
+        height: 20px;
         /*ignore*/
       }
     }

@@ -24,10 +24,10 @@
 </template>
 <script>
 import "./assets/style.scss";
-
 export default {
-  name: "PPCallSound",
+  name: "PpCallSound",
   props: {
+    // 滚动列表
     list: {
       type: Array
     },
